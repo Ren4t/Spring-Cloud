@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+<body ng-controller="indexController">
+<h1>Products</h1>
+<table>
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>Title</td>
+        <td>Price</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="p in products">
+        <td>{{p.id}}</td>
+        <td>{{p.title}}</td>
+        <td>{{p.price}}</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
